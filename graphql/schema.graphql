@@ -1,0 +1,13 @@
+type Person {
+  id: Int!
+  name: String!
+  age: Int!
+  gender: String!
+}
+
+
+type Query{
+  #! 필수라는 뜻
+  people: [Person]!
+  person(id: Int!): Person
+}
